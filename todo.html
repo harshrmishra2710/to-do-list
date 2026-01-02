@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Todo List</title>
+
+  <link rel="stylesheet" href="todo.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="todo-container">
+  <h2>To-Do List</h2>
+  <div class="add-task">
+    <input type="text" id="task-title" placeholder="Task title">
+
+    <div class="row">
+      <input type="date" id="task-date">
+      <select id="task-priority" >
+        <option value="">Priority</option>
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+      </select>
+    </div>
+
+    <button id="add-btn">Add Task</button>
+  </div>
+  <div class="filters">
+    <button class="active">All</button>
+    <button>Work</button>
+    <button>Personal</button>
+    <button>Study</button>
+  </div>
+  <input type="text" id="search" placeholder="Search tasks..." class="search">
+
+  <ul class="task-list"></ul>
+
+  <div class="footer">
+    <span id="count">Pending: 0 | Completed: 0</span>
+    <button class="danger">Clear Completed</button>
+  </div>
+</div>
+
+<script src="todo.js"></script>
+</body>
+</html>
